@@ -1,0 +1,17 @@
+[package]
+name = "my_library"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+
+[dependencies.windows]
+version = "0.48"
+features = [
+    "Data_Xml_Dom",
+    "Win32_Foundation",
+    "Win32_UI_WindowsAndMessaging",
+]
